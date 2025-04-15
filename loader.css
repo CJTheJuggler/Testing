@@ -1,0 +1,60 @@
+/* Hidden by default */
+#juggling-loader {
+    /*display: none;*/
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: 100px;
+    z-index: 9999;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Ball styles */
+.ball {
+    position: absolute;
+    bottom: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    animation: juggle 1.5s infinite ease-in-out;
+}
+
+.ball1 {
+    background: #f44336;
+    left: 20%;
+    animation-delay: 0s;
+}
+
+.ball2 {
+    background: #4caf50;
+    left: 50%;
+    animation-delay: 0.3s;
+}
+
+.ball3 {
+    background: #2196f3;
+    left: 80%;
+    animation-delay: 0.6s;
+}
+
+/* Juggling Animation */
+@keyframes juggle {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+
+    25% {
+        transform: translateY(-80px) scale(1.1);
+    }
+
+    50% {
+        transform: translateY(0) scale(1);
+    }
+
+    100% {
+        transform: translateY(0) scale(1);
+    }
+}

@@ -1,0 +1,31 @@
+.banner {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px 20px;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    opacity: 1;
+    transition: opacity 0.8s ease;
+    /* smooth fade */
+}
+
+.close-btn {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+.close-btn:hover {
+    color: #000;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <!-- SETTING THE INFORMATION OF THE DOCUMENT -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Test Website</title>
+
+    <!--FAVICON-->
+    <link rel="icon" type="image/x-icon" href="">
+
+    <!--STYLESHEETS-->
+    <link rel="stylesheet" href="./shared.css">
+    <link rel="stylesheet" href="./contact.css">
+
+    <!--SCRIPTS-->
+</head>
+
+<body>
+    <nav>
+        <a href="./index.html">Test Page</a>
+        <a href="./contact.html">Contact Page</a>
+        <a href="./announcement.html">Announcement Page</a>
+        <a href="./loader.html">Loading Animation</a>
+        <a href="./calender.html">Event Calander</a>
+    </nav>
+
+    <form action="https://api.web3forms.com/submit" method="POST" id="booking-form">
+
+        <input type="hidden" name="access_key" value="feda6afe-fbee-413e-854c-862dff34e62d">
+
+        <label for="name">Full Name&ast;</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+        <label for="email">Email Address&ast;</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+
+        <label for="performance-date">Preferred Performance Date</label>
+        <input type="date" id="performance-date" name="performance_date">
+
+        <label for="event-details">Event Details&ast;</label>
+        <textarea id="event-details" name="event_details" placeholder="Tell me about your event..." rows="4" required></textarea>
+
+        <p>&ast; required areas</p>
+
+        <button type="submit">Submit Booking Request</button>
+    </form>
+</body>
+
+</html>
